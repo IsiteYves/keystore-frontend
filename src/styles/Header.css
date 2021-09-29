@@ -1,0 +1,80 @@
+.Header,
+.Header .Header__sub:first-child {
+    display: flex;
+}
+
+.Header,
+.Header .Header__sub:first-child {
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+.Header {
+    position: sticky;
+    top: 0px ;
+    background-color: #411475;
+    justify-content: space-between;
+    padding: 0.7rem 2rem;
+    align-items: center;
+    box-shadow: 0px 0 8px #808080;
+}
+
+.Header .Header__sub:first-child {
+    width: 9%;
+}
+
+@media screen and (max-width: 62.5rem) {
+    .Header .Header__sub:first-child {
+        width: 20%;
+    }
+}
+
+.Header .Header__sub:first-child * {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    color: #fff;
+}
+
+.Header .Header__sub:first-child>div:first-child {
+    padding: 0.3rem;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.Header .Header__sub:first-child>div:last-child {
+    position: relative;
+    top: 0.3rem;
+    font-family: monospace;
+    font-size: 17px;
+    height: fit-content;
+    padding-bottom: 0.2rem !important;
+    vertical-align: bottom;
+    border-bottom: 1px solid #ccc;
+}
+
+.Header .Header__sub:last-child a,
+.Notfound>.Middle>a,
+.ConfirmedEmail>.Middle>a {
+    background-color: #6622b4 !important;
+    border-radius: 5px !important;
+    text-transform: capitalize !important;
+    font-size: 16px !important;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.5s ease;
+}
+
+.Header .Header__sub:last-child a:hover,
+.Notfound>.Middle>a:hover,
+.ConfirmedEmail>.Middle>a:hover {
+    background-color: #762fc7 !important;
+}
+
+.Header .Header__sub:last-child * {
+    color: #fff;
+}

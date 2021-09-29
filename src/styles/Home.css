@@ -1,0 +1,457 @@
+@charset "UTF-8";
+/*!
+ * Bootstrap v5.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+table {
+  --bs-table-bg: transparent;
+  --bs-table-accent-bg: transparent;
+  --bs-table-striped-color: #212529;
+  --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+  --bs-table-active-color: #212529;
+  --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+  --bs-table-hover-color: #212529;
+  --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+  vertical-align: top;
+  border-collapse: collapse !important;
+}
+.table > :not(caption) > * > * {
+  padding: 0.5rem 0.5rem;
+  background-color: var(--bs-table-bg);
+  border-bottom-width: 1px;
+  box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+}
+.table > tbody {
+  vertical-align: inherit;
+}
+.table > thead {
+  vertical-align: bottom;
+}
+.table > :not(:last-child) > :last-child > * {
+  border-bottom-color: currentColor;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  --bs-table-accent-bg: var(--bs-table-striped-bg);
+  color: var(--bs-table-striped-color);
+}
+.pb-3 {
+  padding-bottom: 1rem !important;
+}
+.table-dark {
+  --bs-table-bg: #212529;
+  --bs-table-striped-bg: #2c3034;
+  --bs-table-striped-color: #fff;
+  --bs-table-active-bg: #373b3e;
+  --bs-table-active-color: #fff;
+  --bs-table-hover-bg: #323539;
+  --bs-table-hover-color: #fff;
+  color: #fff;
+  border-color: #373b3e;
+}
+
+th {
+  text-align: left !important;
+}
+
+.Home {
+    display: flex;
+}
+.Sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: #212529;
+    /* background-color: #8e8ee7; */
+    width: fit-content;
+    height: 100vh;
+    padding: 2rem;
+}
+.Sidebar * {
+    font-family: Muli !important;
+}
+.Sidebar>* {
+    margin: 1rem auto !important;
+}
+.Sidebar>div:first-of-type>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: fit-content;
+    width: 5rem;
+    height: 5rem;
+    background-color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+    border: 3px solid #5f8fe9;
+    color: #5f8fe9;
+    border-radius: 50%;
+}
+.Sidebar>div:first-of-type>p {
+    text-align: center;
+    margin-top: 0.5rem;
+    width: 9rem;
+    color: #fff;
+    font-weight: 700;
+}
+.Sidebar>*.active,
+.Sidebar>*.active:hover {
+    background-color: #373b3f !important;
+}
+input:disabled {
+    background-color: #ababf7 !important;
+}
+.Sidebar>*:not(:nth-child(2)) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.4rem 1.2rem;
+    border-radius: 0.3125rem;
+}
+.Sidebar>*:not(:nth-child(2))>div:last-of-type {
+    margin-left: 0.8rem;
+}
+.Sidebar>*:not(:nth-child(2)):hover {
+    background-color: #3d4247;
+}
+.Sidebar>*:last-child,
+.newpassword,
+tbody tr td:last-of-type div>*,
+.InputItem:last-of-type>*,
+.Responsive_Header>* {
+    cursor: pointer;
+}
+.Sidebar>*:nth-child(3)>*:first-child,
+.Sidebar>*:nth-child(4)>*:first-child,
+.newpassword>div:first-of-type {
+    position: relative;
+    top: 0.2rem;
+}
+.Sidebar>*:last-child>*:first-of-type {
+    transform: rotate(90deg);
+}
+.Sidebar>*:not(:nth-child(2)) * {
+    user-select: none;
+    color: #fff !important;
+}
+
+.Objective {
+    padding: 1rem 2rem;
+}
+
+.Objective * {
+    font-family: Muli;
+}
+
+.Objective>h2 {
+    font-size: 22px !important;
+    color: #8e8ee7;
+    margin-bottom: 0.5rem;
+}
+.Profile>div {
+    width: 50vw;
+}
+
+.Profile>div>div {
+    height: fit-content !important;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.Profile p {
+    margin: 0 !important;
+}
+
+.Profile>div>div:not(:last-of-type) {
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+
+.Profile>div>div:last-of-type {
+    border: 1px solid #ccc;
+}
+
+.Profile>div>div>* {
+    width: 50%;
+}
+
+.Profile>div>div>*:first-of-type {
+    font-weight: 700;
+    border-right: 1px solid #ccc;
+}
+
+.Profile>div>div>*:last-of-type {
+    padding-left: 2rem;
+}
+
+.Table-container {
+    overflow: auto;
+    max-height: 80vh;
+    padding-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+.Responsive_Header {
+    display: none;
+}
+
+.Sidebar section {
+    display: none !important;
+}
+
+@media screen and (max-width: 1100px) {
+    .Table-container,
+    .Profile>div {
+        width: 73vw !important;
+    }
+    .Table-container table {
+        min-width: 73vw;
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .Table-container,
+    .Profile>div {
+        width: 70vw !important;
+    }
+    .Table-container table {
+        min-width: 67vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .Home {
+        display: block;
+    }
+    .Objective {
+        width: 100vw !important;
+    }
+    .Table-container,
+    .Profile>div {
+        width: 90vw !important;
+    }
+    .Table-container table {
+        margin: auto;
+        min-width: 95vw;
+    }
+    .Sidebar {
+        position: absolute;
+        z-index: 100;
+        display: none;
+        width: 100vw !important;
+    }
+
+    .Sidebar section {
+        border-radius: 0 !important;
+        display: flex !important;
+        width: 90vw;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #363636;
+        transition: all 0.3s ease-in-out
+    }
+
+    .Sidebar section:hover {
+        border-radius: 5px !important;
+    }
+    
+    .Sidebar section>* {
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .Responsive_Header {
+        display: flex;
+        padding: 0.5rem 1rem;
+        box-shadow: 0 0 15px #ccc;
+    }
+}
+
+.Loader {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    margin: 0.8rem auto !important;
+    border: 0.1875rem solid var(--dodger) !important;
+    border-top: 0.1875rem solid transparent !important;
+    border-right: 0.1875rem solid transparent !important;
+    border-radius: 50% !important;
+    animation: rotate 1s infinite linear !important;
+}
+
+@keyframes rotate {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+@media screen and (max-width: 440px) {
+    .Table-container table {
+        min-width: 130vw;
+    }
+}
+
+thead tr {
+    position: sticky;
+    top: 0;
+}
+
+tbody tr {
+    border-bottom: 1px solid #e0e0e0 !important;
+}
+
+tbody tr td:last-of-type {
+    display: flex;
+    text-align: center;
+}
+
+tbody tr td:last-of-type div:first-of-type {
+    padding-right: 0.8rem !important;
+}
+
+tbody tr td:last-of-type div:last-of-type {
+    padding-left: 0.8rem !important;
+}
+
+tbody tr td:last-of-type div:first-of-type * {
+    color: green !important;
+}
+
+tbody tr td:last-of-type div:last-of-type * {
+    color: red;
+}
+
+tbody tr td:last-of-type div:first-of-type {
+    border-right: 1px solid #dbdbdb;
+}
+
+.newpassword {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#fff;
+    padding: 0.3rem 0.8rem;
+    border: 1px solid #5f8fe9;
+    border-radius: 4px;
+    transition: all 0.4s ease;
+}
+
+.newpassword:hover {
+    background-color: #5f8fe9;
+}
+
+.newpassword:hover * {
+    color: #fff;
+}
+
+.newpassword * {
+    color: #5f8fe9;
+    user-select: none;
+}
+
+.Newpassword,
+.Updatepassword {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000a1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.Newpassword *,
+.Updatepassword * {
+    font-family: Muli;
+}
+
+.Newpassword>form,
+.Updatepassword>form {
+    width: fit-content;
+    padding: 1rem 2rem 2rem 2rem;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.Newpassword>form h2,
+.Updatepassword>form h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #8e8ee7;;
+}
+
+.Newpassword .InputItem label,
+.Updatepassword .InputItem label {
+    display: block;
+}
+
+.Newpassword .InputItem:first-of-type,
+.Updatepassword .InputItem:first-of-type {
+    margin-top: 1.2rem;
+}
+
+.Newpassword .InputItem:not(:last-of-type),
+.Updatepassword .InputItem:not(:last-of-type) {
+    margin-bottom: 0.8rem;
+}
+
+.Newpassword .InputItem:not(:last-of-type) input,
+.Updatepassword .InputItem:not(:last-of-type) input {
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    color: #808080;
+    width: 350px;
+    font-size: 17px;
+    outline: none;
+    padding: 0.4rem 0.6rem;
+}
+
+.Newpassword .InputItem:not(:last-of-type) input:focus,
+.Updatepassword .InputItem:not(:last-of-type) input:focus {
+    border: 1px solid #8e8ee7;
+}
+
+.Newpassword .InputItem:last-of-type,
+.Updatepassword .InputItem:last-of-type {
+    width: fit-content !important;
+    margin: 1rem auto 0 auto;
+    display: flex;
+    width: 100%;
+}
+
+.Newpassword .InputItem:last-of-type input,
+.Updatepassword .InputItem:last-of-type input {
+    border: none;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+}
+
+.Newpassword .InputItem:last-of-type input:first-of-type,
+.Updatepassword .InputItem:last-of-type input:first-of-type {
+    background-color: #EFEFEF;
+    color: #000;
+    padding: 0.5rem 1rem;
+}
+
+.Newpassword .InputItem:last-of-type input:first-of-type:hover,
+.Updatepassword .InputItem:last-of-type input:first-of-type:hover {
+    background-color: #e4e4e4;
+}
+
+.Newpassword .InputItem:last-of-type input:last-of-type,
+.Updatepassword .InputItem:last-of-type input:last-of-type {
+    background-color: green;
+    color: #fff;
+    padding: 0.5rem 2rem;
+    margin-left: 1rem;
+}
+
+.Newpassword .InputItem:last-of-type input:last-of-type:hover,
+.Updatepassword .InputItem:last-of-type input:last-of-type:hover {
+    background-color: #0baf0b;
+}

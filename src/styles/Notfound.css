@@ -1,0 +1,52 @@
+.Notfound,
+.Forgot__page,
+.ConfirmedEmail {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Notfound>.Middle,
+.ConfirmedEmail>.Middle {
+    background: #fff;
+    box-shadow: 4px 0 13px #dfdddd;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.Notfound>.Middle>*,
+.ConfirmedEmail>.Middle>* {
+    font-family: 'Segoe UI';
+}
+
+.Notfound>.Middle>h2,
+.ConfirmedEmail>.Middle>h2 {
+    color: #6622b4;
+}
+
+.Notfound>.Middle>p,
+.ConfirmedEmail>.Middle>p {
+    margin: 0.5rem auto 1.5rem auto;
+}
+
+.Notfound>.Middle>a,
+.ConfirmedEmail>.Middle>a {
+    color: #fff;
+    padding: 0.5rem 1rem;
+}
+
+@media screen and (max-width: 27.1875rem) {
+    .Notfound,
+    .ConfirmedEmail {
+        background: #fff;
+    }
+
+    .Notfound>.Middle,
+    .ConfirmedEmail>.Middle {
+        box-shadow: unset;
+    }
+}
